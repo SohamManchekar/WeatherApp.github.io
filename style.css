@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+.content{
+    width: 800px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.180);
+}
+.weather-input{
+    width: 700px;
+    height: 60px;
+    margin: 15px 0 0 50px;
+    display: flex;
+    flex-direction: row;
+}
+.search-btn{
+    width: 80px;
+    height: 60px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 26px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -80px;
+}
+.search-btn:hover{
+    background-color: #e6e6e6;
+}
+.weath-inp{
+    width: 700px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0px 15px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.weather-output{
+    width: 700px;
+    height: 350px;
+    margin: 25px 0 0 50px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.250);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.head{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.head ion-icon{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 3px;
+    color: red;
+}
+.head p{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 6px 0 0 10px;
+    color: black;
+}
+.name{
+    width: 100%;
+    height: 50px;
+}
+.name h4{
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: black;
+}
+.date-today{
+    width: 100%;
+    height: 50px;
+}
+.date-today h5{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+.output{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.out-img{
+    width: 100px;
+    height: 100px;
+    text-align: right;
+}
+.out-img ion-icon{
+     font-size: 50px;
+     color: #fc4a1a;
+     margin: 20px 0 0 0;
+}
+.out-msg{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+.out-msg h1{
+    font-size: 62px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: black;
+}
+.description{
+     width: 120px;
+     height: 100px;
+     margin-left: 10px;
+}
+.description h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: serif;
+    text-align: left;
+    margin-top: 65px;
+    color: black;
+}
+.wind{
+    width: 210px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 40px;
+}
+.wind ion-icon{
+    font-size: 24px;
+    margin: 25px 0 0 0;
+    color: black;
+}
+.wind h5{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+
+/* Responsive css Tablet Phone Mobile*/
+@media screen and (max-width: 800px){ 
+    .main{
+        width: 100%;
+        height: 100vh;
+    }
+    .content{
+        width: 610px;
+        height: 450px;
+    }
+    .weather-input{
+        width: 560px;
+        height: 60px;
+        margin: 15px 0 0 25px;
+    }
+    .weath-inp{
+        width: 560px;
+        height: 60px;
+    }
+    .search-btn{
+        width: 70px;
+        height: 60px;
+        margin-left: -70px;
+        font-size: 24px;
+    }
+    .weather-output{
+        width: 550px;
+        height: 330px;
+        margin: 25px 0 0 30px;
+ }
+    .head{
+        width: 100%;
+        height: 50px;
+    }
+    .head ion-icon{
+        font-size: 35px;
+        margin-top: 3px;
+    }
+    .head p{
+        font-size: 28px;
+        margin: 6px 0 0 10px;
+    }
+    .name{
+        width: 100%;
+        height: 45px;
+    }
+    .name h4{
+        font-size: 26px;
+        text-align: center;
+    }
+    .date-today{
+        width: 100%;
+        height: 45px;
+    }
+    .date-today h5{
+        font-size: 30px;
+        text-align: center;
+    }
+    .output{
+        width: 100%;
+        height: 150px;
+    }
+    .out-img{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    .out-img ion-icon{
+         font-size: 50px;
+         margin: 20px 0 0 0;
+    }
+    .out-msg{
+        width: 150px;
+        height: 100px;
+        text-align: left;
+    }
+    .out-msg h1{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+    .description{
+         width: 80px;
+         height: 100px;
+    }
+    .description h4{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .wind{
+        width: 210px;
+        height: 100px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .wind ion-icon{
+        font-size: 20px;
+        margin: 15px 0 0 0;
+    }
+    .wind h5{
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width: 580px){ 
+    .main{
+        width: 100%;
+        height: 100vh;
+    }
+    .content{
+        width: 480px;
+        height: 450px;
+    }
+    .weather-input{
+        width: 450px;
+        height: 50px;
+        margin: 15px 0 0 15px;
+    }
+    .weath-inp{
+        width: 450px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .search-btn{
+        width: 60px;
+        height: 50px;
+        margin-left: -60px;
+        font-size: 22px;
+    }
+    .weather-output{
+        width: 450px;
+        height: 330px;
+        margin: 25px 0 0 15px;
+     }
+    .head{
+        width: 100%;
+        height: 40px;
+    }
+    .head ion-icon{
+        font-size: 30px;
+        margin-top: 3px;
+    }
+    .head p{
+        font-size: 24px;
+        margin: 6px 0 0 10px;
+    }
+    .name{
+        width: 100%;
+        height: 40px;
+    }
+    .name h4{
+        font-size: 24px;
+    }
+    .date-today{
+        width: 100%;
+        height: 40px;
+        margin-top: 8px;
+    }
+    .date-today h5{
+        font-size: 22px;
+        color: black;
+        text-align: center;
+    }
+    .output{
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+    }
+    .out-img{
+        width: 90px;
+        height: 100px;
+        text-align: center;
+    }
+    .out-img ion-icon{
+         font-size: 45px;
+         margin: 20px 0 0 0;
+    }
+    .out-msg{
+        width: 110px;
+        height: 100px;
+        text-align: left;
+    }
+    .out-msg h1{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .description{
+         width: 60px;
+         height: 100px;
+         margin-left: 4px;
+    }
+    .description h4{
+        font-size: 19px;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .wind{
+        width: 160px;
+        height: 100px;
+    }
+    .wind ion-icon{
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+    .wind h5{
+        font-size: 19px;
+    }
+    
+}
+
+
+@media screen and (max-width: 465px){ 
+    .main{
+        width: 100%;
+        height: 100vh;
+    }
+    .content{
+        width: 350px;
+        height: 400px;
+    }
+    .weather-input{
+        width: 330px;
+        height: 40px;
+        margin: 15px 0 0 10px;
+    }
+    .weath-inp{
+        width: 330px;
+        height: 40px;
+        font-size: 17px;
+    }
+    .search-btn{
+        width: 50px;
+        height: 40px;
+        margin-left: -40px;
+        font-size: 20px;
+    }
+    .weather-output{
+        width: 330px;
+        height: 300px;
+        margin: 20px 0 0 10px;
+     }
+    .head{
+        width: 100%;
+        height: 40px;
+    }
+    .head ion-icon{
+        font-size: 30px;
+        margin-top: 3px;
+        color: red;
+    }
+    .head p{
+        font-size: 24px;
+        margin: 6px 0 0 10px;
+    }
+    .name{
+        width: 100%;
+        height: 40px;
+    }
+    .name h4{
+        font-size: 22px;
+    }
+    .date-today{
+        width: 100%;
+        height: 40px;
+        margin-top: 8px;
+    }
+    .date-today h5{
+        font-size: 20px;
+        color: black;
+        text-align: center;
+    }
+    .output{
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+    }
+    .out-img{
+        width: 60px;
+        height: 100px;
+        text-align: center;
+    }
+    .out-img ion-icon{
+         font-size: 30px;
+         margin: 20px 0 0 0;
+    }
+    .out-msg{
+        width: 75px;
+        height: 100px;
+        text-align: left;
+    }
+    .out-msg h1{
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .description{
+         width: 45px;
+         height: 100px;
+         margin-left: 2px;
+    }
+    .description h4{
+        font-size: 16px;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .wind{
+        width: 125px;
+        height: 100px;
+        margin-left: 5px;
+    }
+    .wind ion-icon{
+        font-size: 16px;
+        margin: 8px 0 0 0;
+    }
+    .wind h5{
+        font-size: 14px;
+    }
+    
+}

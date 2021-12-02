@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/02e3eaba9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="content">
+        <div class="weather-input">
+            <input type="text" class="weath-inp" id="weatherinp" placeholder="Enter City Name...." autocomplete="off">
+            <button class="search-btn" id="search"><i class="fas fa-search"></i></button>
+        </div>
+
+         <div class="weather-output">
+               <div class="head"><ion-icon name="sunny-outline"></ion-icon><p>Weather</p></div>
+               <div class="name"><h4 id="city">------</h4></div>
+               <div class="date-today"><h5 id="today">-------</h5></div>
+               <div class="output">
+                   <div class="out-img"><ion-icon name="partly-sunny-sharp"></ion-icon></div>
+                   <div class="out-msg"><h1 id="temp">-----</h1></div>
+                   <div class="description"><h4 id="des">--</h4></div>               
+                   <div class="wind">
+                       <h5 id="speed"><ion-icon name="snow-outline"></ion-icon> ---- </h5>
+                       <h5 id="humidity"><ion-icon name="thermometer-outline"></ion-icon> ---- </h5>
+                    </div>
+              </div>
+         </div>
+    </div>
+</div>
+
+
+<script src="weather.js"></script>
+
+</body>
+</html>
